@@ -1,0 +1,31 @@
+This project exemplifies the co-design of firmware/hardware.
+
+Firmware developers are assumed to be familiar with the book "Hardware/Firmware
+Interface Design: Best Practices for Improving Embedded Systems Development" by
+Gary Stringham published in 2009.
+
+Examples are drawn from the Rockbox firmware MP3 player project [1]. In particular,
+inspiration was found in the iAUDIO power management firmware [2] that targets the
+PCF50606 data sheet [3].
+
+Note that no attempt is made to capture the entire complexity of firmware
+development. Instead, the emphasis is on engineering principles that embrace
+the interface design between firmware and hardware models in SystemC.
+
+Thus, three common firmware/hardware (FW/HW) use cases are illustrated:
+
+* FW reads HW register
+* FW writes HW register
+* HW interrupts FW
+
+To run the example, you need to install SystemC [4].
+
+As always, any feedback or questions is appreciated.
+
+Enjoy,
+Alex
+
+[1] http://www.rockbox.org/
+[2] http://git.rockbox.org/?p=rockbox.git;a=tree;f=firmware/target/coldfire/iaudio
+[3] http://www.rockbox.org/wiki/pub/Main/DataSheets/pcf50606.pdf
+[4] http://www.accellera.org/downloads/standards/systemc/
